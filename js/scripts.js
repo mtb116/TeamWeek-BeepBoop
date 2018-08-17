@@ -15,10 +15,16 @@ function letterCheck(array) {
 
 function beep(array) {
   var zero = ("beep");
-  if (ifZero.includes(array.charAt(0,-1))) {
-    return zero;
-  } else {
-    return numThreeCheck(array);
+  var checkZero = array.split("");
+  console.log("array length is " + array.length);
+  console.log(checkZero);
+
+  for (i = 0; i < array.length; i++) {
+    if (checkZero[i].indexOf("0")) {
+      return zero;
+    } else {
+      return numThreeCheck(array);
+    }
   }
 }
 
