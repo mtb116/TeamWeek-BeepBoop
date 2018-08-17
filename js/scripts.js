@@ -1,11 +1,5 @@
 // Back end
 
-// function divideByThree() {
-//   if (%3 === 0){
-//     alert("I can't do that")
-//   }
-// }
-
 
 var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 //Checks if entered value is a number
@@ -14,7 +8,7 @@ function checkIfNumber(array) {
     alert("enter a number");
     Default();
   } else {
-  return (array);
+    return array
   }
 }
 
@@ -32,11 +26,9 @@ $(document).ready(function(){
     var userInputArr = userInput.split(" ");
     console.log(userInputArr);
 
-    userInputArr.forEach(function(sendBackEnd) {
-      checkIfNumber(sendBackEnd);
-
-      $("#outputResult").append(" " + checkIfNumber(sendBackEnd));
-
+    userInputArr.forEach(function(array) {
+      checkIfNumber(array);
+      $("#outputResult").append(" " + checkIfNumber(array));
     });
   });
 });
