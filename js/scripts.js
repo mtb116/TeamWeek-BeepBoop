@@ -34,15 +34,19 @@ function beep(array) {
   var checkZero = array.split("");
 
   console.log("array length is " + array.length);
-  console.log(checkZero);
+  console.log("var checkZero is " + checkZero);
 
-  for (i = 0; i < array.length; i++) {
-    if (checkZero[i].indexOf("0")) {
+  for (i = 0; i < checkZero.length; i++) {
+    if (checkZero.includes("0")) {
       return zero;
     } else {
-      return array;
+      return boop(array);
     }
   }
+}
+
+function boop(array) {
+  alert(array);
 }
 
 // User Interface
