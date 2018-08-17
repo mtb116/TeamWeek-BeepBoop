@@ -13,10 +13,10 @@ _Specifications are ordered by highest priority first_
 ### Specifications
 * _1) Program replaces any integer divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." with image of HAL from Space Odyssey_
   * _**Example Input: 3**_
-  * _**Example Input: "I'm sorry, Dave. I'm afraid I can't do that." with image**_
+  * _**Example Output: "I'm sorry, Dave. I'm afraid I can't do that." with image**_
 
   * _**Example Input: 30**_
-  * _**Example Input: "I'm sorry, Dave. I'm afraid I can't do that." with image**_
+  * _**Example Output: "I'm sorry, Dave. I'm afraid I can't do that." with image**_
 
 * _2) Program replaces integers containing 0 with "beep"_
   * _**Example Input: 0**_
