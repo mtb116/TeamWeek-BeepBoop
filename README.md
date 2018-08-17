@@ -11,7 +11,7 @@ _This is an interactive webpage designed to demonstrate my skills using Loops an
 _Specifications are ordered by highest priority first_
 
 ### Specifications
-* _1) Program replaces any integer divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." with image of Hal from Space Odyssey_
+* _1) Program replaces any integer divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." with image of HAL from Space Odyssey_
   * _**Example Input: 3**_
   * _**Example Input: "I'm sorry, Dave. I'm afraid I can't do that." with image**_
 
