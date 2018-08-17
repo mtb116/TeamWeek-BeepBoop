@@ -14,7 +14,7 @@ function letterCheck(array) {
 }
 
 function numThreeCheck(array) {
-  var Dave = ("I can't do that, Dave")
+  var Dave = ("I'm sorry, Dave. I'm afraid I can't do that.")
   var zero = ("beep");
 
   if (ifZero.includes(array.charAt(0))) {
