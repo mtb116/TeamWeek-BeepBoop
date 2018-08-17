@@ -8,7 +8,7 @@ function checkIfNumber(array) {
     alert("enter a number");
     Default();
   } else {
-    return array
+    return array;
   }
 }
 
@@ -26,9 +26,8 @@ $(document).ready(function(){
     var userInputArr = userInput.split(" ");
     console.log(userInputArr);
 
-    userInputArr.forEach(function(array) {
-      checkIfNumber(array);
-      $("#outputResult").append(" " + checkIfNumber(array));
+    userInputArr.forEach(function(checkletters) {
+      $("#outputResult").append(" " + checkIfNumber(checkletters));
     });
   });
 });
