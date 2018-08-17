@@ -3,6 +3,10 @@ body {
   color: white;
 }
 
+input {
+  color: black;
+}
+
 #robot {
   display: none;
   height: 500px;

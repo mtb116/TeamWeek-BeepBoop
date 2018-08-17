@@ -9,33 +9,28 @@ function letterCheck(array) {
     Default();
   } else {
     console.log(array);
+    return beep(array);
+  }
+}
+
+function beep(array) {
+  var zero = ("beep");
+  if (ifZero.includes(array.charAt(0,-1))) {
+    return zero;
+  } else {
     return numThreeCheck(array);
   }
 }
 
 function numThreeCheck(array) {
   var Dave = ("I can't do that, Dave")
-
-  if (array%3 === 0) {
+  if ((array%3 === 0) && (array !==0)) {
     $("#robot").fadeIn();
     return Dave;
   } else {
-    return beepBoop(array);
+    return array;
   }
 }
-
-function beepBoop(array) {
-  var boop = ("boop");
-  var beep = ("beep");
-  if (ifOne.includes(array.charAt(0,-1))) {
-    return boop;
-  } else if (ifZero.includes(array.charAt(0,-1))) {
-      return beep;
-  } else {
-      return array;
-  }
-}
-
 
 // User Interface
 $(document).ready(function(){
