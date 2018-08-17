@@ -9,9 +9,24 @@ function letterCheck(array) {
     Default();
   } else {
     console.log(array);
-    return beep(array);
+    return numThreeCheck(array);
   }
 }
+
+function numThreeCheck(array) {
+  var Dave = ("I can't do that, Dave")
+  var zero = ("beep");
+
+  if (ifZero.includes(array.charAt(0))) {
+    return zero;
+  } else if (array%3 === 0) {
+      $("#robot").fadeIn();
+      return Dave;
+  } else {
+      return beep(array);
+  }
+}
+
 
 function beep(array) {
   var zero = ("beep");
@@ -20,21 +35,11 @@ function beep(array) {
   console.log(checkZero);
 
   for (i = 0; i < array.length; i++) {
-    if (checkZero[i].indexOf("0") || ifZero.includes(array.charAt(0))) {
+    if (checkZero[i].indexOf("0")) {
       return zero;
     } else {
-      return numThreeCheck(array);
+      return array;
     }
-  }
-}
-
-function numThreeCheck(array) {
-  var Dave = ("I can't do that, Dave")
-  if ((array%3 === 0) && (array !== 0)) {
-    $("#robot").fadeIn();
-    return Dave;
-  } else {
-    return array;
   }
 }
 
