@@ -9,14 +9,16 @@ function letterCheck(array) {
     Default();
   } else {
     console.log(array);
-    numThreeCheck(array);
+    return numThreeCheck(array);
   }
 }
 
 function numThreeCheck(array) {
-  console.log(array);
+  var Dave = ("I can't do that")
   if (array%3 === 0) {
-    alert("I can't do that");
+    return Dave;
+  } else {
+    return array;
   }
 }
 
@@ -27,10 +29,10 @@ $(document).ready(function(){
     event.preventDefault();
 
     var userInput = $("input#num").val();
-    console.log(userInput);
+    console.log("Entered value is " + userInput);
 
     var userInputArr = userInput.split(" ");
-    console.log(userInputArr);
+    console.log("Array is now " + userInputArr);
 
     userInputArr.forEach(function(checkletters) {
       $("#outputResult").append(" " + letterCheck(checkletters));
