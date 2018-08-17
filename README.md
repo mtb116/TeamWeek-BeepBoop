@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an interactive webpage designed to demonstrate my skills using jQuery Loops and Arrays._
+_This is an interactive webpage designed to demonstrate my skills using Loops and Arrays with JavaScript and jQuery. I use for() and forEach() to separately process multiple values entered at one time. I also use JavaScript method .include() to check arrays for specific values. Additionally I use personal CSS styling to give the webpage a Space Odyssey theme._
 
 _Specifications are ordered by highest priority first_
 
