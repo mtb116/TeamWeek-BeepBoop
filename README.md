@@ -49,7 +49,7 @@ _This webpage will likely work as expected in any web browser but specifically w
 
 ## Known Bugs
 
-* _If a letters are entered an alert will ask for a number to be inputted and the program will stop. However, if a letter is entered first, followed by a space and then a number, the program will give the expected alert but continue the program with the given number._
+* _If a letters are entered an alert will ask for a number to be inputted and the program will stop. However, if a number is entered first, followed by a space and then letter(s), the program will give the expected alert but continue the program with the first given number._
 
 * _If separate numbers are entered and at least one is divisible by 3 then specification 1 will proceed as usual. However, the other numbers will also appear in the order they were entered._
 

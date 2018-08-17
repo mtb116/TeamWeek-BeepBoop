@@ -1,6 +1,5 @@
 // Back end
 var ifZero = ["0"];
-var ifOne = ["1"];
 var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 //Checks if entered value is a number
 function letterCheck(array) {
@@ -30,7 +29,6 @@ function numThreeCheck(array) {
 
 function beep(array) {
   var zero = ("beep");
-  var array;
   var checkZero = array.split("");
 
   console.log("array length is " + array.length);
@@ -46,7 +44,19 @@ function beep(array) {
 }
 
 function boop(array) {
-  alert(array);
+  var one = ("boop");
+  var checkOne = array.split("");
+
+  console.log("array at boop function is " + array);
+  console.log("var checkOne is" + checkOne);
+
+  for (i = 0; i < checkOne.length; i++) {
+    if (checkOne.includes("1")) {
+      return one;
+    } else {
+      return array;
+    }
+  }
 }
 
 // User Interface
