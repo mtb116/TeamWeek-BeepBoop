@@ -20,7 +20,7 @@ function beep(array) {
   console.log(checkZero);
 
   for (i = 0; i < array.length; i++) {
-    if (checkZero[i].indexOf("0")) {
+    if (checkZero[i].indexOf("0") || ifZero.includes(array.charAt(0))) {
       return zero;
     } else {
       return numThreeCheck(array);
@@ -30,7 +30,7 @@ function beep(array) {
 
 function numThreeCheck(array) {
   var Dave = ("I can't do that, Dave")
-  if ((array%3 === 0) && (array !==0)) {
+  if ((array%3 === 0) && (array !== 0)) {
     $("#robot").fadeIn();
     return Dave;
   } else {
