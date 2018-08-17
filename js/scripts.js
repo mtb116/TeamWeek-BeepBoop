@@ -3,16 +3,22 @@
 
 var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 //Checks if entered value is a number
-function checkIfNumber(array) {
+function letterCheck(array) {
   if (alpha.includes(array.charAt(0,-1))) {
     alert("enter a number");
     Default();
   } else {
-    return array;
+    console.log(array);
+    numThreeCheck(array);
   }
 }
 
-
+function numThreeCheck(array) {
+  console.log(array);
+  if (array%3 === 0) {
+    alert("I can't do that");
+  }
+}
 
 
 // User Interface
@@ -27,7 +33,7 @@ $(document).ready(function(){
     console.log(userInputArr);
 
     userInputArr.forEach(function(checkletters) {
-      $("#outputResult").append(" " + checkIfNumber(checkletters));
+      $("#outputResult").append(" " + letterCheck(checkletters));
     });
   });
 });
