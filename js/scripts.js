@@ -30,7 +30,9 @@ function numThreeCheck(array) {
 
 function beep(array) {
   var zero = ("beep");
+  var array;
   var checkZero = array.split("");
+
   console.log("array length is " + array.length);
   console.log(checkZero);
 
