@@ -15,31 +15,25 @@ function letterCheck(array) {
 
 function numThreeCheck(array) {
   var Dave = ("I can't do that, Dave")
+
+  if (array%3 === 0) {
+    return Dave;
+  } else {
+    return beepBoop(array);
+  }
+}
+
+function beepBoop(array) {
   var boop = ("boop");
   var beep = ("beep");
-
-  if (ifZero.includes(array.charAt(0,-1))) {
-    return beep;
-  } else if (array%3 === 0) {
-      return Dave;
-  } else if (ifOne.includes(array.charAt(0,-1))) {
-      return boop;
+  if (ifOne.includes(array.charAt(0,-1))) {
+    return boop;
+  } else if (ifZero.includes(array.charAt(0,-1))) {
+      return beep;
   } else {
       return array;
   }
 }
-
-// function beepBoop(array) {
-//   var boop = ("boop");
-//   var beep = ("beep");
-//   if (ifOne.includes(array.charAt(0,-1))) {
-//     return boop;
-//   } else if (ifZero.includes(array.charAt(0,-1))) {
-//       return beep;
-//   } else {
-//       return array;
-//   }
-// }
 
 
 // User Interface
