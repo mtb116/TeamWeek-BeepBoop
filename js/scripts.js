@@ -17,6 +17,7 @@ function numThreeCheck(array) {
   var Dave = ("I can't do that, Dave")
 
   if (array%3 === 0) {
+    $("#robot").fadeIn();
     return Dave;
   } else {
     return beepBoop(array);

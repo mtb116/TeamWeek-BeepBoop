@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#robot {
+  display: none;
+  height: 500px;
+  width: 670px;
+}
