@@ -16,8 +16,12 @@
 //Business Logic
 var beepBoop = function (num) {
   let nums = [];
+  var Dave = ("I'm sorry, Dave. I'm afraid I can't do that.");
+  var zero = ("beep");
+  if (num = 0) {
+    return zero;
+  }
   for (let i = 0; i <= num; i++) {
-
     nums.push(i);
 
   }
