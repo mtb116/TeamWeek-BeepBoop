@@ -17,7 +17,8 @@
 var beepBoop = function (num) {
   let nums = [];
   var Dave = ("I'm sorry, Dave. I'm afraid I can't do that.");
-  var zero = ("beep");
+  var zero = ("[beep]");
+  var one = ("[boop]");
 
   if (num === 0) {
     return zero;
@@ -26,7 +27,13 @@ var beepBoop = function (num) {
     return Dave;
   } else {
   for (i = 0; i <= num; i++) {
+    if (i.toString().includes("0")) {
+      nums.push(zero);
+    } else if (i.toString().includes("1")) {
+      nums.push(one); 
+    } else {
     nums.push(i);
+    }
   }
   return nums;
   }
