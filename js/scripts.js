@@ -1,17 +1,19 @@
 
 //Checks if user input is a number. returns an alert if not.
-//Removed for now.
 
-// var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-// function letterCheck(num) {
-//   if (alpha.includes(num.charAt(0, -1))) {
-//     alert("enter a number");
-//     Default();
-//   } else {
-//     return BeepBoop(num);
-//   }
-// }
-
+function alphanumeric(txt)
+{
+var letters = /^[a-z]+$/;
+if(txt.value.match(letters))
+{
+alert('Please input alphanumeric characters only');
+//return false;
+  //  Default();
+  } else {
+    return beepBoop(num);
+}
+}
+//!!Verifies only numbers are used in the input field, but breaks the beepboop. consequently not getting any output.
 
 //Business Logic
 var beepBoop = function (num) {
