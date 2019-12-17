@@ -16,35 +16,28 @@
 
 //This function just doesn't work!!!!!
 //should at least output a range of numbers from 0 to the user input.
-function BeepBoop(num) {
-  var Dave = ("I'm sorry, Dave. I'm afraid I can't do that.")
-  var zero = ("beep");
 
-  console.log(num);
-
-  for (var i = 0; i < num; i++) {
-    console.log(i);
-    if (i = 0) {
-      return zero;
-    } else if (i % 3 === 0) {
-      $("#robot").fadeIn();
-      return Dave;
-    } else {
-      return i;
-    }
+//Business Logic
+var beepBoop = function(num) {
+  let nums = [];
+  for (let i = 0; i <= num; i++) {
+    
+      nums.push(i);
+    
   }
-}
+  return nums.join(", ");
+};
 
 
 
-$(document).ready(function () {
-  $("form#submitNum").submit(function (event) {
+//User Interface Logic
+$(document).ready(function() {
+  //Submit Form
+  $("form#submitNum").submit(function(event) {
     event.preventDefault();
-
-    var userInput = parseInt($("input#num").val());
-    console.log(userInput);
-
-    $("#outputResult").append(" " + BeepBoop(userInput));
-
-  });
-});
+    let number = parseInt($("input#num").val());
+    let result = beepBoop(number);
+    $("#outputResult").text(result);
+    $("#outputResult").fadeIn();
+  })
+})
