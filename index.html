@@ -9,11 +9,11 @@
   </head>
 
   <body>
-    <form id="submitNum">
+    <form name="submitNum">
       <h3><em>Open the pod bay doors, HAL ...</em></h3>
       <label for="num">Enter a number</label>
       <input type="text" id="num">
-      <button type="submit" class="btn btn-danger">Enter</button>
+      <button type="submit" onclick="alphanumeric(document.submitNum.num)" class="btn btn-danger">Enter</button>
     </form>
 
     <div id="result">
