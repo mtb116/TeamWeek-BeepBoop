@@ -19,15 +19,12 @@
 
 //Business Logic
 var beepBoop = function (num) {
-  let nums = [];
+  let numbers = [];
   for (let i = 0; i <= num; i++) {
-
-    nums.push(i);
-
+    numbers.push(i);
   }
-  return nums;
+  return numbers;
 };
-
 
 
 //User Interface Logic
