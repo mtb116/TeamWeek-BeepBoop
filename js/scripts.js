@@ -14,9 +14,6 @@
 
 
 
-//This function just doesn't work!!!!!
-//should at least output a range of numbers from 0 to the user input.
-
 //Business Logic
 var beepBoop = function (num) {
   let nums = [];
