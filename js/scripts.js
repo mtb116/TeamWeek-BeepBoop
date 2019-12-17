@@ -14,26 +14,25 @@
 
 
 //Business Logic
-var beepBoop = function(num) {
+var beepBoop = function (num) {
   let nums = [];
   for (let i = 0; i <= num; i++) {
-    
-      nums.push(i);
-    
+
+    nums.push(i);
+
   }
-  return nums.join(", ");
+  return nums;
 };
 
 
 
 //User Interface Logic
-$(document).ready(function() {
+$(document).ready(function () {
   //Submit Form
-  $("form#submitNum").submit(function(event) {
+  $("form#submitNum").submit(function (event) {
     event.preventDefault();
     let number = parseInt($("input#num").val());
-    let result = beepBoop(number);
-    $("#outputResult").text(result);
+    $("#outputResult").text(beepBoop(number));
     $("#outputResult").fadeIn();
   })
 })
