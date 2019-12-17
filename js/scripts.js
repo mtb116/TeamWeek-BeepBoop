@@ -33,7 +33,6 @@ var beepBoop = function (num) {
 };
 
 
-
 //User Interface Logic
 $(document).ready(function () {
   //Submit Form
