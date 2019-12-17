@@ -15,11 +15,21 @@
 
 //Business Logic
 var beepBoop = function (num) {
-  let numbers = [];
-  for (let i = 0; i <= num; i++) {
-    numbers.push(i);
+  let nums = [];
+  var Dave = ("I'm sorry, Dave. I'm afraid I can't do that.");
+  var zero = ("beep");
+
+  if (num === 0) {
+    return zero;
+  } else if (num % 3 === 0) {
+    $("#robot").fadeIn();
+    return Dave;
+  } else {
+  for (i = 0; i <= num; i++) {
+    nums.push(i);
   }
-  return numbers;
+  return nums;
+  }
 };
 
 
