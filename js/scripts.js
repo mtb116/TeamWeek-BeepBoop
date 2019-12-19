@@ -22,6 +22,7 @@ var beepBoop = function (num) {
     $("#robot").fadeIn();
     return Dave;
   } else {
+    $("#robot").hide();
     for (i = 0; i <= num; i++) {
       if (i.toString().includes("0")) {
         nums.push(zero);
